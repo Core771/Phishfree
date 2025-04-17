@@ -1,0 +1,93 @@
+/* === General Page Styling === */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Segoe UI', sans-serif; /* Set the default font */
+    background: #f5f7fa; /* Light grayish background for a clean look */
+    
+    /* Center content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* === Container for the Content === */
+.container {
+    background: #ffffff; /* White background for contrast */
+    padding: 40px; /* Padding inside the box */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align all text inside */
+    width: 90%; /* Responsive width on small screens */
+    max-width: 500px; /* Max width for larger screens */
+}
+
+/* === Main Title === */
+h1 {
+    margin-bottom: 10px; /* Space below the title */
+    color: #2c3e50; /* Dark blue text color */
+}
+
+/* === Subtitle Below the Title === */
+.subtitle {
+    color: #7f8c8d; /* Soft gray color */
+    font-size: 16px; /* Slightly smaller font */
+    margin-bottom: 30px; /* Space below subtitle */
+}
+
+/* === Group Input and Button Together === */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Space between input and button */
+}
+
+/* === Style the Text Input === */
+input[type="text"] {
+    padding: 12px; /* Space inside the input */
+    font-size: 16px; /* Font size for easy readability */
+    border-radius: 6px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    outline: none; /* Remove default focus outline */
+}
+
+/* === Style the Submit Button === */
+button {
+    padding: 12px; /* Space inside the button */
+    font-size: 16px;
+    background-color: #3498db; /* Light blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* === Button Hover Effect === */
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* === Display the Result Message === */
+.result-box {
+    margin-top: 20px; /* Space above result */
+    font-size: 18px; /* Slightly larger font */
+    font-weight: bold; /* Make the result stand out */
+}
+
+/* === Hidden Class for Toggling Visibility === */
+.hidden {
+    display: none; /* Completely hides the element */
+}
+
+.explanation-box {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 6px;
+    color: #333;
+}

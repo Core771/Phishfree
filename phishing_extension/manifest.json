@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Real-Time Phishing Detector",
+  "version": "1.0",
+  "description": "Checks if the websites you visit are phishing or legitimate",
+  "permissions": ["tabs", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "PhishGuard"
+  }
+}

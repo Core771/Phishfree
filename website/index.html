@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhishFree - URL Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PhishFree</h1>
+        <p class="subtitle">Real-Time URL Phishing Detection</p>
+
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="Enter a URL to check">
+            <button onclick="checkURL()">Check URL</button>
+        </div>
+
+        <p id="result" class="result-box hidden"></p>
+        <div id="explanation" class="explanation-box hidden"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
